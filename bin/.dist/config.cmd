@@ -4,6 +4,7 @@ set root_dir=%drive_letter%:\env
 REM version
 set php_v=7.4
 set php_ver=%php_v%.6
+set nginx_ver=1.18.0
 
 
 REM argument
@@ -24,8 +25,11 @@ REM directory
 set soft_dir=%root_dir%\win\ProgramFiles
 
 set php_dir=%soft_dir%\php-%php_ver%
+set nginx_dir=%soft_dir%\nginx-%nginx_ver%
 
 
 REM configuration
 set php_ini=%php_dir%/php.ini
 ::set php_ini=%data_dir%/php/php.ini
+::set nginx_conf=%data_dir%\nginx\conf\nginx.conf
+set nginx_conf=conf/nginx.conf

@@ -19,6 +19,10 @@ set php_listen=
 set php_docroot=%root_dir%/www
 set php_router=%root_dir%/www/router.php
 ::set php_router=
+set php_bind=127.0.0.1:9000,192.168.100.4:9001
+set php_cgi_addr=127.0.0.1
+::set php_cgi_port=9002,9003
+set php_cgi_port=
 
 
 REM directory

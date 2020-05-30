@@ -1,5 +1,6 @@
 @echo off
 call config.cmd
+call ../tmp/bin/php.cmd
 
 echo Web Server
 REM https://www.php.net/manual/zh/features.commandline.webserver.php

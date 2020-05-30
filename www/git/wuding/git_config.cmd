@@ -1,0 +1,3 @@
+set site_name=github
+::set user_repos=20130226,20130306,20130913,anfora,apicdn,astrology,barcode,com.filemule.opensearch.20130805,com.filemule.opensearch.20130818,com.filemule.torrent.20130920,com.gowud.book.20131206,com.gowud.callback.20140104,com.softwu.user-agent.20131204,com.urlnk.alexa.20130816,com.urlnk.bdhd.20130924,com.urlnk.page.20131216,com.urlnk.qvod.20131218,com.urlnk.web-analytics.20130919,com.wudso.kaisou.20140104,com.wudso.passport.20140106,com.wudso.search-suggestions.20130920,com.wudso.www.20140108,couponiang,emcee,equiv-route,geminiphp,libraphp,library.20130806,library.20141018,magic-cube,magnet,mysql-tutorial,note,opensearch-php,php-app,php-bot,php-ext,php-func,php-manual,private,topdb,UI,wuding.github.io
+set user_repos=php-ext,php-func

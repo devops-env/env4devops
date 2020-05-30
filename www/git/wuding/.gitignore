@@ -1,0 +1,13 @@
+*
+!.gitignore
+!git_config.cmd
+
+!/php-ini/
+!/php-web/
+!/php-run/
+!/php-mobi/
+
+!/php-ini/*
+!/php-web/*
+!/php-run/*
+!/php-mobi/*

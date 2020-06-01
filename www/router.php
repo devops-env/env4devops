@@ -13,7 +13,8 @@
 define('REQUEST_NAME', parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 # define('BASE_DIR', dirname(__DIR__));
 define('ENV_DIR', dirname(__DIR__));
-$request_filename = __DIR__ . REQUEST_NAME;
+$_CONFIG = include ENV_DIR . '/etc/config.php';
+$request_filename = $_CONFIG['file_exists_dir'] . REQUEST_NAME;
 if (preg_match('/\.(?:png|jpg|jpeg|gif|ico)$/i', REQUEST_NAME)) {
     if (file_exists($request_filename)) {
         return false; // 直接返回请求的文件

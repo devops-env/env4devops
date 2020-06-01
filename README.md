@@ -28,6 +28,58 @@
 
 
 
+## git 忽略
+
+.gitignore
+
+```
+/bin/*.cmd
+/dev/
+```
+
+etc/.gitignore
+
+```
+*
+!.gitignore
+!.dist
+!.dist/*
+```
+
+tmp/.gitignore
+
+```
+/ssl/
+/www/
+```
+
+tmp/bin/.gitignore
+
+```
+*
+!.gitignore
+!.dist
+!.dist/*
+```
+
+win/ProgramFiles/.gitignore
+
+```
+*
+!.gitignore
+!README.md
+```
+
+www/git/<发布者>/.gitignore
+
+```
+*
+!.gitignore
+!git_config.cmd
+```
+
+
+
 ## 软件
 
 ### 网络

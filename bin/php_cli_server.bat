@@ -2,7 +2,7 @@
 call config.cmd
 FOR %%G IN (%other_config%) DO (
     IF "%%G" == "php" (
-        call ../tmp/bin/php.cmd
+        call php.cmd
     )
 )
 

@@ -12,3 +12,8 @@ SET php_port=8080
 SET php_listen=
 SET php_docroot=N:\Server\VCS\GitHub\wuding\php-app\web
 SET php_router=%php_docroot%\router.php
+
+::SET php_cgi_call=v74
+set php_cgi_addr=127.0.0.1
+set php_cgi_port=7414,7326,7234
+set php_bind=

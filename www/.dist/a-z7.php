@@ -14,17 +14,17 @@ class Alphabet
     {
         $version = '';
         $this->files = array(
-            'play' => 'e:/env/www\work\wuding\astrology\web\index.php',
-            'robot' => ROOT_DIR .'/www\work\wuding\astrology\web\index.php',
+            'play0' => 'e:/env/www\work\wuding\astrology\web\index.php',
+            'robot1' => 'E:/Server/VCS/GitHub/wuding/astrology/master/web/index.php',
             'phpliteadmin' => ROOT_DIR .'/dev/storage/mirror/https/bitbucket.org/phpliteadmin/public/downloads/.unzip/phpLiteAdmin_v1-9-8-2/phpliteadmin.php',
             'unicode' => ROOT_DIR .'/tmp/www/unicode.php',
         );
 
-        if (preg_match('/^\/(wubenli|resume|adminer)([^?]*)/i', $_SERVER['REQUEST_URI'], $matches)) {
+        if (preg_match('/^\/(wubenli2|resume|adminer)([^?]*)/i', $_SERVER['REQUEST_URI'], $matches)) {
             $func = $matches[1];
             $version = $matches[2];
 
-        } elseif (preg_match('/^\/(play|robot|phpliteadmin|unicode)(.*)/i', $_SERVER['REQUEST_URI'], $matches)) {
+        } elseif (preg_match('/^\/(play0|robot1|phpliteadmin|unicode)(.*)/i', $_SERVER['REQUEST_URI'], $matches)) {
             $this->key = $matches[1];
             $func = 'func';
         }
@@ -69,7 +69,11 @@ class Alphabet
 
     public function func()
     {
-        return require $this->files[$this->key];
+        $file = $this->files[$this->key] ?? null;
+        if (!$file) {
+            return false;
+        }
+        return require $file;
     }
 
     public function run($uri = null)
@@ -78,6 +82,7 @@ class Alphabet
         if ($func) {
             return $this->$func();
         }
+        return false;
         return $uri;
     }
 }
